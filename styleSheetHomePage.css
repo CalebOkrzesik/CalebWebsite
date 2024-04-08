@@ -1,0 +1,248 @@
+/* styleSheetHomePage.css */
+
+/* Resets all margins and padding to none */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+/* Header Styling */
+    .header {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        color: transparent;
+        background: linear-gradient(to right, #000000, #797979); /* Adjust gradient colors as needed */
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: waterWave 2s linear infinite alternate; /* Water wave animation */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Text shadow */
+    }
+
+    @keyframes waterWave {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-5px); /* Adjust the wave height as needed */
+        }
+    }
+
+    .headerBackground{
+        background: #FFF9EB; /* Set to the soft beige color */
+    }
+
+/* Body Styling */
+
+    /* Styling for the Navigation Bar */
+    ul.navigationBar {
+        background-color: #FFAC5E;
+        font-style: 'Brush Script MT', Rubik;
+        font-weight: bold;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        font-size: 20px
+    }
+
+    ul.navigationBar li {
+        float: left;
+    }
+
+    ul.navigationBar li a {
+        color: rgb(0, 0, 0);
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    ul.navigationBar li a:hover {
+        background-color: #F5D492;
+    }
+
+    /* Styling for container one */
+    .containerOne {
+        background-color: #FCECC9;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .containerTwo{
+        background-color: #FCECC9;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: slideInFromLeft 1s ease-out;
+    }
+
+    .containerThree{
+        background-color: #FFF9EB;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: slideInFromLeft 1s ease-out;
+
+        /*Text Size and center*/
+        text-align: center;
+        font-style: 'Brush Script MT', Rubik;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px
+
+    }
+
+    .containerFour{
+        background-color: #FCECC9;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: slideInFromLeft 1s ease-out;
+    }
+
+    /*Contact Information*/
+    .contact-info{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+    /* Styling for the introduction */
+    .introduction {
+        max-width: 40%;
+        opacity: 0; /* Initially set opacity to 0 */
+        transform: translateY(20px); /* Initially move the text down */
+        animation: fadeInUp 1.5s ease-in-out forwards, cascadeFromBottom 1s ease-in-out forwards; /* Multiple animations */
+    }
+    
+    .introduction h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 36px;
+        margin-bottom: 10px;
+        white-space: nowrap; /* Prevent line break for each letter */
+        overflow: hidden;
+    }
+    
+    .introduction p {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+    }
+    
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes cascadeFromBottom {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    /* Image caleb navy pier */
+    .img-caleb_navy_pier {
+        max-width: 500px;
+        max-height: 400px;
+        width: auto;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeIn 1.5s ease-in-out forwards; /* Animation for fading in */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .introduction{
+        font-style: 'Brush Script MT', Rubik;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+    }
+    .introduction-title{
+        font-style: 'Brush Script MT', Rubik;
+        font-size: 60px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    /* Button contact me */
+    .contactMe {
+        font-style: 'Brush Script MT', Rubik;
+        background-color: #FFAC5E;
+        border-radius: 500px;
+        border: 1px solid transparent;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        height: 48px;
+        letter-spacing: 2px;
+        line-height: 1;
+        min-width: 160px;
+        outline: none;
+        padding: 16px 14px 18px;
+        text-align: center;
+        text-transform: uppercase;
+        transition-duration: .3s;
+        transition-property: background-color, border-color, color, box-shadow, filter;
+        white-space: normal;
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeIn 1.5s ease-in-out forwards, swipeIn 1s ease-in-out forwards; /* Animation for fading in and swiping in */
+    }
+
+    .buttonContactMe{
+        
+    }
+    
+    .contactMe:hover {
+        background-color: #F5D492;
+    }

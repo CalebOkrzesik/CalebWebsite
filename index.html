@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calebs Website</title>
+
+    <!--Link To style sheet-->
+    <link rel="stylesheet" href="styleSheetHomePage.css">
+
+
+<!-- Contains the title of page and also navigatin bar -->
+</head>
+    <!-- Page Name Here -->
+    <section class = headerBackground>
+        <div class = "header">
+            Calebs Portfolio
+        </div>
+    </section>
+
+
+    
+
+<body>
+    <!-- Make frames for holding the different sections-->
+
+    <!-- Drop down menu with Links to Relavant Pages, projects, and other parts of the website Navigation Bar -->
+    <ul class="navigationBar">
+        <li class = "mainPage"><a href="index.html">Home</a></li>
+        <li class = "projects"><a href="projects.html">Projects</a></li>
+        <li class = "aboutCaleb"><a href="aboutCaleb.html">About Caleb</a></li>
+    </ul>
+
+    <!--Main Section called container one-->
+    <section class="containerOne">
+        <!--Image of -->
+        <div class="image-container">
+            <img src="/Images/CalebNavyPier.JPG" alt="Caleb_Navy_Pier" class="img-caleb_navy_pier">
+        </div>
+
+        <!--Intro section-->
+        <div class="introduction">
+            <div class="introduction-title">
+                Welcome to Caleb's Portfolio
+            </div>
+            <br>
+            I am a CS student constantly in the pursuit of knowledge within and outside of the coding field.
+        </div>
+        
+        <!--Button for contacting-->
+        <div class="button-container">
+            <button id="contactMe" class="contactMe" onclick="sendEmail()">Contact Me</button>
+        </div>
+
+        <script>
+            function sendEmail() {
+                window.location.href = "mailto:calebokrzesik@gmail.com?subject=Hello&body=Message";
+            }
+        </script>
+        
+    </section>
+
+    <!--Just saying that below are links to my stuff-->
+    <section class="containerThree">
+        <div href="mailto:calebokrzesik@gmail.com" class="textContainerThree">
+            ⬇️ CLICK ICONS BELOW FOR MY FOR LINKS ⬇️
+        </div>
+    
+    </section>
+
+    <!--Links to important things-->
+    <section class="containerFour">
+        <div class="LinkOne">
+            <!--Youtube Link-->
+            <a href="https://www.youtube.com/channel/UCjVTcCRVCoyInvh5Ny9jiAQ" target="_blank">
+                <img src="/Images/youtubeLogo.png" alt="Caleb_Navy_Pier" class="img-caleb_navy_pier">
+            </a>
+
+            <a href="https://www.linkedin.com/in/calebokrzesik/" target="_blank">
+                <img src="/Images/linkedinorange.png" alt="Caleb_Navy_Pier" class="img-caleb_navy_pier">
+            </a>
+        </div>
+    </section>
+
+
+    
+</body>
+
+</html>
