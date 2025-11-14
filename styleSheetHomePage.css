@@ -191,10 +191,15 @@
 
 
     /* Image caleb navy pier */
-      .img-caleb_navy_pier {
-          max-width: 100%;
-          height: auto;
-      }
+    .img-caleb_navy_pier {
+        max-width: 500px;
+        max-height: 400px;
+        width: auto;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeIn 1.5s ease-in-out forwards; /* Animation for fading in */
+    }
 
 
     @keyframes fadeIn {
